@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Bicubik Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bicubik Regular'), url('./Bicubik.woff') format('woff');
+}
+
+#container {
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: 100%; 
+    grid-template-rows: 15% 15% 55% 15%; 
+    grid-template-areas: 
+    "header_graphic"
+    "title"
+    "content"
+    "home";
+    background-color: #2C3531;
+}
+
+#header_graphic {
+    grid-area: header_graphic;   
+    display: flex;
+    justify-content: space-around;
+        #triangle-down {
+            grid-column: column6-start / column6-end; 
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid #D9B08C;
+    }
+
+        .parallelogram-left {
+            width: 50px;
+            height: 100px;
+            transform: skew(27deg);
+            background: #116466;
+        }
+
+        #parallelogram-left-first {
+           margin-left: 25px;
+        }
+
+        .parallelogram-right {
+            width: 50px;
+            height: 100px;
+            transform: skew(-27deg);
+            background: #116466;
+        }
+
+        #parallelogram-right-first {
+            margin-right: 25px;
+         }
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 2em;
+    color: #d1e8e2; 
+}
+
+#projects {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 5% 5% 5%;
+    grid-template-areas: 
+    "one     two"
+    "three     four";
+}
+
+#one {
+    grid-area: one;
+    background-color: red;
+    justify-self: stretch;
+    margin: 3%;
+}
+
+#two {
+    grid-area: two;
+    background-color: blue;
+    justify-self: stretch;
+    margin: 3%;
+}
+
+#three {
+    grid-area: three;
+    background-color: green;
+    justify-self: stretch;
+    margin: 3%;
+}
+
+#four {
+    grid-area: four;
+    background-color: purple;
+    justify-self: stretch;
+    margin: 3%;
+}
+
+
+#home {
+    grid-area: home;
+    display: flex;
+
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .triangle-left {
+        border-top: 15px solid transparent;
+        border-right: 25px solid rgb(238, 205, 156);
+        border-bottom: 15px solid transparent;
+        margin: 0;
+    }
+
+    span {
+        color: #d1e8e2;
+        font-family: 'Courier Prime', monospace;
+        font-size: 1em;
+        margin-left: 10px;
+        margin-right: 4%;
+    }
+}

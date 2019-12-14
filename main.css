@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Bicubik Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bicubik Regular"), url("./Bicubik.woff") format("woff");
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 15% 20% 15% 12% 12% 12% 12%;
+      grid-template-rows: 15% 20% 15% 12% 12% 12% 12%;
+      grid-template-areas: "header_graphic" "header_name" "header_role" "menu_one" "menu_two" "menu_three" "menu_four";
+  background-color: #2C3531;
+}
+
+#header_graphic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header_graphic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#header_graphic #triangle-down {
+  grid-column: column6-start / column6-end;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #D9B08C;
+}
+
+#header_graphic .parallelogram-left {
+  width: 50px;
+  height: 100px;
+  -webkit-transform: skew(27deg);
+          transform: skew(27deg);
+  background: #116466;
+}
+
+#header_graphic #parallelogram-left-first {
+  margin-left: 25px;
+}
+
+#header_graphic .parallelogram-right {
+  width: 50px;
+  height: 100px;
+  -webkit-transform: skew(-27deg);
+          transform: skew(-27deg);
+  background: #116466;
+}
+
+#header_graphic #parallelogram-right-first {
+  margin-right: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header_name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header_name;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #d1e8e2;
+  font-family: 'Bicubik Regular';
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header_name span {
+  display: block;
+}
+
+#header_name #hide {
+  opacity: 0;
+  display: none;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #555;
+}
+
+#header_role {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: header_role;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 30px;
+  color: #d1e8e2;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 1em;
+}
+
+#menu_one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: menu_one;
+}
+
+#menu_two {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: menu_two;
+}
+
+#menu_three {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: menu_three;
+}
+
+#menu_four {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: menu_four;
+}
+
+.menu_item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+      grid-template-areas: "left right";
+}
+
+.menu_item .triangle-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 0;
+  height: 0;
+  margin-left: 1em;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #eecd9c;
+  border-bottom: 25px solid transparent;
+}
+
+.menu_item .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #d1e8e2;
+  font-family: 'Courier Prime', monospace;
+}
+
+@media only screen and (min-width: 750px) {
+  #header_name {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #header_name span {
+    display: inline;
+  }
+  #header_name #hide {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=main.css.map */
