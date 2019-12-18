@@ -20,7 +20,7 @@
     "title"
     "projects"
     "home";
-    background-color: #2C3531;
+    background-color: #1A1A1D;
 }
 
 #header_graphic {
@@ -33,14 +33,14 @@
             height: 0;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
-            border-top: 100px solid #D9B08C;
+            border-top: 100px solid #950740;
     }
 
         .parallelogram-left {
             width: 50px;
             height: 100px;
             transform: skew(27deg);
-            background: #116466;
+            background: #4E4E50;
         }
 
         #parallelogram-left-first {
@@ -51,7 +51,7 @@
             width: 50px;
             height: 100px;
             transform: skew(-27deg);
-            background: #116466;
+            background: #4E4E50;
         }
 
         #parallelogram-right-first {
@@ -124,7 +124,7 @@ a {
     padding: 53px 0px 53px 0px;
     color: #d1e8e2;
     margin: 5%;
-    border: 15px solid #D9B08C;
+    border: 15px solid #950740;
     border-radius: 30px/10px;
     text-decoration: none;
     cursor: pointer;
@@ -167,7 +167,7 @@ a {
     margin-top: 0;
     text-align: center;
     margin-bottom: 5%;
-    color: #d1e8e2;
+    color: #C3073F;
     font-family: 'Courier Prime', monospace;
   }
   .popup .close {
@@ -201,7 +201,7 @@ a {
 
     .triangle-left {
         border-top: 15px solid transparent;
-        border-right: 25px solid #D9B08C;
+        border-right: 25px solid #950740;
         border-bottom: 15px solid transparent;
         margin: 0;
     }
@@ -278,24 +278,24 @@ a {
   .button {
     font-size: 2em;
     padding: 70px 10px 70px 10px;
-    border: 30px solid #D9B08C;
+    border: 30px solid #950740;
 
       &:hover {
-      background: #116466;
-      color: #d1e8e2;
+      background: #4E4E50;
+      color: #C3073F;
   }
 }
 
   #home {
     width: 100%; 
       &:hover {
-      background-color: #116466;
+      background-color: #4E4E50;
               } 
     height: 30%;
 
     .triangle-left {
         border-top: 20px solid transparent;
-        border-right: 30px solid #D9B08C;
+        border-right: 30px solid #950740;
         border-bottom: 20px solid transparent;
     }
 
