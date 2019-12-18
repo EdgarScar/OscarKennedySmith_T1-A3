@@ -18,7 +18,7 @@
   -ms-grid-rows: 15% 20% 15% 12% 12% 12% 12%;
       grid-template-rows: 15% 20% 15% 12% 12% 12% 12%;
       grid-template-areas: "header_graphic" "header_name" "header_role" "menu_one" "menu_two" "menu_three" "menu_four";
-  background-color: #2C3531;
+  background-color: #1A1A1D;
 }
 
 #header_graphic {
