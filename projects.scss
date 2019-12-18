@@ -18,7 +18,7 @@
     grid-template-areas: 
     "header_graphic"
     "title"
-    "content"
+    "projects"
     "home";
     background-color: #2C3531;
 }
@@ -74,48 +74,123 @@ a {
 
 #projects {
     display: grid;
-    justify-content: center;
-    justify-items: center;
+    justify-self: center;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 0 5% 5% 5%;
     grid-template-areas: 
-    "one     two"
-    "three     four";
+    "one   two"
+    "three four";
 }
 
 #one {
     grid-area: one;
-    background-color: red;
-    justify-self: stretch;
-    margin: 3%;
-}
+    align-self: center;
+    justify-self: center;
+    width: 100%
+  }
 
 #two {
     grid-area: two;
-    background-color: blue;
-    justify-self: stretch;
-    margin: 3%;
+    justify-self: center;
+    align-self: center;
+    width: 100%
 }
 
 #three {
     grid-area: three;
-    background-color: green;
-    justify-self: stretch;
-    margin: 3%;
+    justify-self: center;
+    align-self: center;
+    width: 100%
 }
 
 #four {
     grid-area: four;
-    background-color: purple;
-    justify-self: stretch;
-    margin: 3%;
+    justify-self: center;
+    align-self: center;
+    width: 100%
 }
 
+.popup .image {
+  height: 90%;
+  width: 100%;
+}
+
+.button {
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    font-family: 'Bicubik Regular';
+    padding: 53px 0px 53px 0px;
+    color: #d1e8e2;
+    margin: 5%;
+    border: 15px solid #D9B08C;
+    border-radius: 30px/10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: silver;
+  color: black; 
+}
+
+  .overlay {
+    position: fixed;
+    margin: 5%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 5% auto;
+    padding: 20px;
+    background: rgb(88, 85, 83);
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    transition: all 4s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #d1e8e2;
+    font-family: 'Courier Prime', monospace;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #D9B08C;
+  }
 
 #home {
     grid-area: home;
     display: flex;
+    justify-self: center;
+    align-self: start;
+    height: 80%;
+    width: 50%;
 
     a {
         width: 100%;
@@ -126,7 +201,7 @@ a {
 
     .triangle-left {
         border-top: 15px solid transparent;
-        border-right: 25px solid rgb(238, 205, 156);
+        border-right: 25px solid #D9B08C;
         border-bottom: 15px solid transparent;
         margin: 0;
     }
@@ -138,4 +213,94 @@ a {
         margin-left: 10px;
         margin-right: 4%;
     }
+}
+    
+@media screen and (min-width: 700px){
+
+  #title {
+    font-size: 4em;
+}
+
+  #container {
+    display: grid; 
+    grid-template-columns: 100%; 
+    grid-template-rows: 15% 10% 68% 15%; 
+    grid-template-areas: 
+    "header_graphic"
+    "title"
+    "projects"
+    "home";
+    background-color: #2C3531;
+}
+
+#projects {
+  display: grid;
+  justify-self: end;
+  height: 90%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "one   two"
+  "three four";
+}
+
+#one {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+#two {
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+#three {
+  margin-left: 10%;
+  margin-right: 5%;
+
+}
+
+#four {
+  margin-right: 10%;
+  margin-left: 5%;
+}
+  .popup{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #shrink {
+    width: 50%;
+  }
+  .button {
+    font-size: 2em;
+    padding: 70px 10px 70px 10px;
+    border: 30px solid #D9B08C;
+
+      &:hover {
+      background: #116466;
+      color: #d1e8e2;
+  }
+}
+
+  #home {
+    width: 100%; 
+      &:hover {
+      background-color: #116466;
+              } 
+    height: 30%;
+
+    .triangle-left {
+        border-top: 20px solid transparent;
+        border-right: 30px solid #D9B08C;
+        border-bottom: 20px solid transparent;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+}
 }

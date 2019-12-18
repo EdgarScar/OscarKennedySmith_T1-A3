@@ -157,6 +157,10 @@ a {
       grid-template-areas: "left right";
 }
 
+.menu_item:hover {
+  background-color: #116466;
+}
+
 .menu_item .triangle-right {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -168,11 +172,15 @@ a {
   height: 0;
   margin-left: 1em;
   border-top: 25px solid transparent;
-  border-left: 50px solid #eecd9c;
+  border-left: 50px solid #D9B08C;
   border-bottom: 25px solid transparent;
 }
 
-.menu_item .title {
+.menu_item .triangle-right:hover {
+  border-left: 50px solid #d1e8e2;
+}
+
+.title {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: right;
@@ -199,6 +207,18 @@ a {
   }
   #header_name #hide {
     display: inline;
+  }
+  .title {
+    font-size: 2em;
+  }
+  #header_role {
+    font-size: 1.6em;
+  }
+  #header_name {
+    font-size: 3.5em;
+  }
+  .menu_item:hover {
+    background-color: #116466;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -15,8 +15,8 @@
   height: 100vh;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 15% 15% 55% 15%;
-      grid-template-rows: 15% 15% 55% 15%;
+  -ms-grid-rows: 15% 10% 68% 15%;
+      grid-template-rows: 15% 10% 68% 15%;
       grid-template-areas: "header_graphic" "title" "holder" "home";
   background-color: #2C3531;
 }
@@ -69,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+a span {
+  color: #d1e8e2;
+}
+
 #title {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -84,6 +88,148 @@ a {
 }
 
 #holder {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: holder;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25% 25% 25% 25%;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-areas: "facebook" "linkedin" "github" "twitter";
+}
+
+#holder #fb {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: facebook;
+}
+
+#holder #li {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: linkedin;
+}
+
+#holder #gh {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: github;
+}
+
+#holder #tw {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: twitter;
+}
+
+#holder .grouped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#holder .grouped span {
+  padding-right: 10%;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+#holder .button {
+  border-radius: 4px;
+  background-color: #113f2e;
+  border: none;
+  color: #d1e8e2;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px;
+  width: 150px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#holder .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#holder .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #D9B08C;
+}
+
+#holder .button:hover {
+  background-color: #d1e8e2;
+}
+
+#holder .button:hover span {
+  color: blue;
+}
+
+#holder .button:hover span {
+  padding-right: 25px;
+}
+
+#holder .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.clicker {
+  width: 100px;
+  height: 100px;
+  outline: none;
+  cursor: pointer;
+}
+
+.hiddendiv {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 87%;
+  width: 50%;
+  margin-left: 8%;
+  background-color: #D9B08C;
+  font-size: .7em;
+  font-family: 'Courier Prime', monospace;
+  color: #116466;
+}
+
+.hiddendiv span {
+  padding-left: 7px;
+}
+
+i {
+  font-size: 2em;
+  color: #3b5998;
+  padding: 10px 0px 10px 0px;
+}
+
+.button:hover + .hiddendiv {
+  -webkit-transition: 3s;
+  transition: 3s;
+  visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,84 +241,6 @@ a {
           align-items: center;
 }
 
-#holder #content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 70px 70px 70px;
-      grid-template-columns: 70px 70px 70px;
-  -ms-grid-rows: 70px 70px 70px;
-      grid-template-rows: 70px 70px 70px;
-      grid-template-areas: ". down ." "right . left" ". up .";
-}
-
-#holder #content .triangle-down {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: down;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 0;
-  height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  border-top: 120px solid;
-}
-
-#holder #content .triangle-left {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: left;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-right: 120px solid #555;
-  border-bottom: 60px solid transparent;
-}
-
-#holder #content .triangle-up {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: up;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 0;
-  height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  border-bottom: 120px solid #555;
-}
-
-#holder #content .triangle-up:hover ~ .triangle-left {
-  border-bottom: 120px solid red;
-}
-
-#holder #content .triangle-right {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: right;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-left: 120px solid #555;
-  border-bottom: 60px solid transparent;
-}
-
 #home {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -180,6 +248,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-self: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+  width: 50%;
 }
 
 #home a {
@@ -197,7 +269,7 @@ a {
 
 #home .triangle-left {
   border-top: 15px solid transparent;
-  border-right: 25px solid #eecd9c;
+  border-right: 25px solid #D9B08C;
   border-bottom: 15px solid transparent;
   margin: 0;
 }
@@ -208,5 +280,40 @@ a {
   font-size: 1em;
   margin-left: 10px;
   margin-right: 4%;
+}
+
+@media screen and (min-width: 700px) {
+  #holder .button {
+    border-radius: 8px;
+    color: #d1e8e2;
+    font-size: 2em;
+    width: 50%;
+  }
+  #title {
+    font-size: 2.8em;
+    padding-bottom: 2%;
+  }
+  .hiddendiv {
+    height: 70%;
+    width: 50%;
+    font-size: 1em;
+  }
+  .hiddendiv span {
+    padding-left: 50px;
+  }
+  #home {
+    width: 100%;
+  }
+  #home:hover {
+    background-color: #116466;
+  }
+  #home .triangle-left {
+    border-top: 20px solid transparent;
+    border-right: 30px solid #D9B08C;
+    border-bottom: 20px solid transparent;
+  }
+  #home span {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=resources.css.map */

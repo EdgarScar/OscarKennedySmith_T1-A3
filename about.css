@@ -13,11 +13,10 @@
 #container {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 15% 15% 55% 15%;
-      grid-template-rows: 15% 15% 55% 15%;
+  -ms-grid-rows: 6% 3% 87% 2%;
+      grid-template-rows: 6% 3% 87% 2%;
       grid-template-areas: "header_graphic" "title" "content" "home";
   background-color: #2C3531;
 }
@@ -74,11 +73,16 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Tomorrow', sans-serif;
   font-size: 2em;
   color: #d1e8e2;
@@ -88,10 +92,58 @@ a {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'Courier Prime', monospace;
   color: #d1e8e2;
   font-size: 1em;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 20px 20px;
+}
+
+#content #details {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 90%;
+}
+
+#content a {
+  color: #D9B08C;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-decoration: underline;
+}
+
+#content #profile {
+  height: 80%;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#content #qls img {
+  width: 100%;
+  height: 100%;
+}
+
+#content #resume {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#content #one {
+  width: 30%;
+  padding-top: 10px;
+  height: 10%;
 }
 
 #home {
@@ -101,6 +153,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  background-color: #2C3531;
 }
 
 #home a {
@@ -129,5 +183,129 @@ a {
   font-size: 1em;
   margin-left: 10px;
   margin-right: 4%;
+}
+
+@media screen and (min-width: 700px) {
+  #container {
+    -ms-grid-rows: 8% 5% 80% 5%;
+        grid-template-rows: 8% 5% 80% 5%;
+  }
+  #title {
+    font-size: 3em;
+    padding-bottom: 40px;
+  }
+  #content {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: content;
+    display: -ms-grid;
+    display: grid;
+    font-family: 'Courier Prime', monospace;
+    color: #d1e8e2;
+    font-size: 2em;
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "contact contact" "resume link" "profile content1" "qls content2" "futsal content3";
+  }
+  #content #details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact;
+    width: 90%;
+    padding-left: 4%;
+  }
+  #content #resume {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: resume;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+  #content #one {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: link;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 30%;
+    height: 20%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+  #content #profile {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: profile;
+    height: 320px;
+    width: 270px;
+    padding-left: 25px;
+  }
+  #content #content1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: content1;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #content #qls {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: qls;
+  }
+  #content #qls img {
+    height: 320px;
+    width: 270px;
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+  #content #content2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: content2;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #content #futsal {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: futsal;
+  }
+  #content #futsal img {
+    height: 320px;
+    width: 270px;
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+  #content #content3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: content3;
+    padding-bottom: 5%;
+  }
+  #content .popup .image {
+    height: 90%;
+    width: 100%;
+  }
+  #home {
+    width: 100%;
+    height: 60%;
+  }
+  #home:hover {
+    background-color: #116466;
+  }
+  #home .triangle-left {
+    border-top: 20px solid transparent;
+    border-right: 30px solid #eecd9c;
+    border-bottom: 20px solid transparent;
+  }
+  #home span {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=about.css.map */

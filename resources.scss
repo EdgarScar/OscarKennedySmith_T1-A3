@@ -13,7 +13,7 @@
     display: grid; 
     height: 100vh;
     grid-template-columns: 100%; 
-    grid-template-rows: 15% 15% 55% 15%; 
+    grid-template-rows: 15% 10% 68% 15%; 
     grid-template-areas: 
     "header_graphic"
     "title"
@@ -56,10 +56,14 @@
         #parallelogram-right-first {
             margin-right: 25px;
          }
+         
 }
 
 a {
     text-decoration: none;
+    span {
+        color: #d1e8e2;
+    }
 }
 
 #title {
@@ -72,102 +76,197 @@ a {
 }
 
 #holder {
+    grid-area: holder;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "facebook"
+    "linkedin"
+    "github"
+    "twitter";
+
+    #fb {
+        grid-area: facebook;
+    }
+
+    #li {
+        grid-area: linkedin;
+    }
+
+    #gh {
+        grid-area: github;
+    }
+
+    #tw {
+        grid-area: twitter;
+    }
+
+    .grouped {
+        display: flex;
+        justify-content: start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .grouped span {
+        padding-right: 10%;
+        font-family: 'Tomorrow', sans-serif;
+    }
+
+
+    .button {
+        border-radius: 4px;
+        background-color: #113f2e;
+        border: none;
+        color: #d1e8e2;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 10px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        }
+        
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+        
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        color: #D9B08C;
+        }
+
+        .button:hover {
+            background-color: #d1e8e2;
+            span {
+                color: blue;
+            }
+        }
+        .button:hover span {
+        padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+}
+
+.clicker {
+    width:100px;
+    height:100px;
+    outline:none;
+    cursor:pointer;
+    }
+    
+.hiddendiv{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 87%;
+    width: 50%;
+    margin-left: 8%;
+    background-color:#D9B08C;
+    font-size: .7em;
+    font-family: 'Courier Prime', monospace;
+    color: #116466;
+    span {
+        padding-left: 7px;
+    }
+    }
+
+    i {
+        font-size: 2em;
+        color: #3b5998;
+        padding: 10px 0px 10px 0px;
+    }
+
+.button:hover + .hiddendiv{
+    transition: 3s;
+    visibility: visible;
     display: flex;
     justify-content: center;
     align-items: center;
+    }
 
-    #content {
-        display: grid;
-        grid-template-columns: 70px 70px 70px; 
-        grid-template-rows: 70px 70px 70px;
-        grid-template-areas: 
-        ". down ."
-        "right . left"
-        ". up .";
 
-        .triangle-down {
-            grid-area: down;
-            justify-self: center;
-            align-self: center;
-            width: 0;
-            height: 0;
-            border-left: 60px solid transparent;
-            border-right: 60px solid transparent;
-            border-top: 120px solid ;
+
+
+    #home {
+        grid-area: home;
+        display: flex;
+        justify-self: center;
+        align-self: start;
+        width: 50%;
+    
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+    
         .triangle-left {
-            grid-area: left;
-            justify-self: center;
-            align-self: center;
-            width: 0;
-            height: 0;
-            border-top: 60px solid transparent;
-            border-right: 120px solid #555;
-            border-bottom: 60px solid transparent;
+            border-top: 15px solid transparent;
+            border-right: 25px solid #D9B08C;
+            border-bottom: 15px solid transparent;
+            margin: 0;
         }
-        .triangle-up {
-            grid-area: up;
-            justify-self: center;
-            align-self: center;
-            width: 0;
-            height: 0;
-            border-left: 60px solid transparent;
-            border-right: 60px solid transparent;
-            border-bottom: 120px solid #555;
+    
+        span {
+            color: #d1e8e2;
+            font-family: 'Courier Prime', monospace;
+            font-size: 1em;
+            margin-left: 10px;
+            margin-right: 4%;
+        }
         }
         
-        .triangle-up:hover ~ .triangle-left {
-                border-bottom: 120px solid red;
-        }
-        // .triangle-up:hover ~.triangle-left {
-        //     transition: 6s;
-        //     width: 0;
-        //     height: 0;
-        //     border-left: 40px solid transparent;
-        //     border-right: 40px solid transparent;
-        //     border-bottom: 1000px solid red;
-        //     }
+@media screen and (min-width: 700px){
 
-        .triangle-right {
-            grid-area: right;
-            justify-self: center;
-            align-self: center;
-            width: 0;
-            height: 0;
-            border-top: 60px solid transparent;
-            border-left: 120px solid #555;
-            border-bottom: 60px solid transparent;
-        }
-    }
-}
-
-
-
-
-#home {
-    grid-area: home;
-    display: flex;
-
-    a {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .triangle-left {
-        border-top: 15px solid transparent;
-        border-right: 25px solid rgb(238, 205, 156);
-        border-bottom: 15px solid transparent;
-        margin: 0;
-    }
-
-    span {
+    #holder .button {
+        border-radius: 8px;
         color: #d1e8e2;
-        font-family: 'Courier Prime', monospace;
-        font-size: 1em;
-        margin-left: 10px;
-        margin-right: 4%;
+        font-size: 2em;
+        width: 50%;
     }
+
+    #title {
+        font-size: 2.8em;
+        padding-bottom: 2%;
+    }
+
+    .hiddendiv{
+        height: 70%;
+        width: 50%;
+        font-size: 1em;
+        span {
+            padding-left: 50px;
+        }
+        }
+
+        #home {    
+            width: 100%; 
+            &:hover {
+                background-color: #116466;
+            } 
+            .triangle-left {
+                border-top: 20px solid transparent;
+                border-right: 30px solid #D9B08C;
+                border-bottom: 20px solid transparent;
+            }
+            span {
+                font-size: 1.5em;
+            }
+            }
 }
 

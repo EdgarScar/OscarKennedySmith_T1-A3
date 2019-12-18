@@ -18,7 +18,7 @@
       grid-template-columns: 100%;
   -ms-grid-rows: 15% 15% 55% 15%;
       grid-template-rows: 15% 15% 55% 15%;
-      grid-template-areas: "header_graphic" "title" "content" "home";
+      grid-template-areas: "header_graphic" "title" "projects" "home";
   background-color: #2C3531;
 }
 
@@ -87,56 +87,146 @@ a {
 #projects {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  margin: 0 5% 5% 5%;
-      grid-template-areas: "one     two" "three     four";
+      grid-template-areas: "one   two" "three four";
 }
 
 #one {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: one;
-  background-color: red;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  margin: 3%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
 }
 
 #two {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: two;
-  background-color: blue;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  margin: 3%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
 }
 
 #three {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: three;
-  background-color: green;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  margin: 3%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
 }
 
 #four {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: four;
-  background-color: purple;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  margin: 3%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.popup .image {
+  height: 90%;
+  width: 100%;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Bicubik Regular';
+  padding: 53px 0px 53px 0px;
+  color: #d1e8e2;
+  margin: 5%;
+  border: 15px solid #D9B08C;
+  border-radius: 30px/10px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: silver;
+  color: black;
+}
+
+.overlay {
+  position: fixed;
+  margin: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 5% auto;
+  padding: 20px;
+  background: #585553;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+  -webkit-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 5%;
+  color: #d1e8e2;
+  font-family: 'Courier Prime', monospace;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #D9B08C;
 }
 
 #home {
@@ -146,6 +236,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-self: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+  height: 80%;
+  width: 50%;
 }
 
 #home a {
@@ -163,7 +258,7 @@ a {
 
 #home .triangle-left {
   border-top: 15px solid transparent;
-  border-right: 25px solid #eecd9c;
+  border-right: 25px solid #D9B08C;
   border-bottom: 15px solid transparent;
   margin: 0;
 }
@@ -174,5 +269,90 @@ a {
   font-size: 1em;
   margin-left: 10px;
   margin-right: 4%;
+}
+
+@media screen and (min-width: 700px) {
+  #title {
+    font-size: 4em;
+  }
+  #container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 15% 10% 68% 15%;
+        grid-template-rows: 15% 10% 68% 15%;
+        grid-template-areas: "header_graphic" "title" "projects" "home";
+    background-color: #2C3531;
+  }
+  #projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    height: 90%;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "one   two" "three four";
+  }
+  #one {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  #two {
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+  #three {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  #four {
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+  .popup {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shrink {
+    width: 50%;
+  }
+  .button {
+    font-size: 2em;
+    padding: 70px 10px 70px 10px;
+    border: 30px solid #D9B08C;
+  }
+  .button:hover {
+    background: #116466;
+    color: #d1e8e2;
+  }
+  #home {
+    width: 100%;
+    height: 30%;
+  }
+  #home:hover {
+    background-color: #116466;
+  }
+  #home .triangle-left {
+    border-top: 20px solid transparent;
+    border-right: 30px solid #D9B08C;
+    border-bottom: 20px solid transparent;
+  }
+  #home span {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=projects.css.map */
