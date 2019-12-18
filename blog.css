@@ -18,7 +18,7 @@
   -ms-grid-rows: 2% 2% 86% 15%;
       grid-template-rows: 2% 2% 86% 15%;
       grid-template-areas: "header_graphic" "title" "holder" "home";
-  background-color: #2C3531;
+  background-color: #1A1A1D;
 }
 
 #header_graphic {
@@ -38,7 +38,7 @@
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 100px solid #D9B08C;
+  border-top: 100px solid #950740;
 }
 
 #header_graphic .parallelogram-left {
@@ -46,7 +46,7 @@
   height: 100px;
   -webkit-transform: skew(27deg);
           transform: skew(27deg);
-  background: #116466;
+  background: #4E4E50;
 }
 
 #header_graphic #parallelogram-left-first {
@@ -58,7 +58,7 @@
   height: 100px;
   -webkit-transform: skew(-27deg);
           transform: skew(-27deg);
-  background: #116466;
+  background: #4E4E50;
 }
 
 #header_graphic #parallelogram-right-first {
@@ -76,7 +76,7 @@
       justify-self: center;
   font-family: 'Tomorrow', sans-serif;
   font-size: 2.3em;
-  color: #d1e8e2;
+  color: #C3073F;
 }
 
 #holder {
@@ -108,7 +108,7 @@
 
 #bloglist p {
   font-size: 1.5em;
-  color: #D9B08C;
+  color: #950740;
   font-family: 'Tomorrow', sans-serif;
   padding-bottom: 10px;
 }
@@ -123,16 +123,16 @@ ul {
 li {
   text-decoration: none;
   font-size: 17px;
-  border-bottom: 1px solid #D9B08C;
+  border-bottom: 1px solid #950740;
 }
 
 li:first-child {
-  border-top: 1px solid #D9B08C;
+  border-top: 1px solid #950740;
 }
 
 li a {
   text-decoration: none;
-  color: #d1e8e2;
+  color: #C3073F;
   font-family: 'Courier Prime', monospace;
   width: 300px;
   height: 40px;
@@ -146,12 +146,12 @@ li a:hover {
   line-height: 40px;
   width: 80%;
   text-decoration: none;
-  color: #2C3531;
-  background: #D9B08C;
+  color: #1A1A1D;
+  background: #950740;
 }
 
 .blogpost {
-  background-color: #2C3531;
+  background-color: #1A1A1D;
 }
 
 .blogpost .blog-insert {
@@ -179,7 +179,7 @@ li a:hover {
 
 .blogpost .text {
   padding: 20px;
-  color: #d1e8e2;
+  color: #C3073F;
   font-family: 'Courier Prime', monospace;
 }
 
@@ -196,7 +196,7 @@ li a:hover {
   display: flex;
   height: 100%;
   padding: 20px 0px 20px 0px;
-  background-color: #2C3531;
+  background-color: #1A1A1D;
 }
 
 #home a {
@@ -214,13 +214,13 @@ li a:hover {
 
 #home .triangle-left {
   border-top: 15px solid transparent;
-  border-right: 25px solid #eecd9c;
+  border-right: 25px solid #950740;
   border-bottom: 15px solid transparent;
   margin: 0;
 }
 
 #home span {
-  color: #d1e8e2;
+  color: #C3073F;
   font-family: 'Courier Prime', monospace;
   font-size: 1em;
   margin-left: 10px;
@@ -245,7 +245,7 @@ li a:hover {
   }
   #bloglist p {
     font-size: 3em;
-    color: #D9B08C;
+    color: #950740;
     font-family: 'Tomorrow', sans-serif;
     padding-bottom: 10px;
     margin: 0%;
@@ -253,11 +253,11 @@ li a:hover {
   li {
     text-decoration: none;
     font-size: 25px;
-    border-bottom: 1px solid #D9B08C;
+    border-bottom: 1px solid #950740;
   }
   .blogpost .text {
     padding: 30px 30px 60px 30px;
-    color: #d1e8e2;
+    color: #C3073F;
     font-family: 'Courier Prime', monospace;
     font-size: 20px;
   }
@@ -269,7 +269,7 @@ li a:hover {
     width: 100%;
   }
   #home:hover {
-    background-color: #116466;
+    background-color: #4E4E50;
   }
   #home a span {
     font-size: 1.5em;
