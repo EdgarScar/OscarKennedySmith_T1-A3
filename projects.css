@@ -272,6 +272,10 @@ a {
 }
 
 @media screen and (min-width: 700px) {
+  html {
+    background-color: #2C3531;
+    height: 100%;
+  }
   #title {
     font-size: 4em;
   }
@@ -280,6 +284,7 @@ a {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    height: 100%;
     -ms-grid-rows: 15% 10% 68% 15%;
         grid-template-rows: 15% 10% 68% 15%;
         grid-template-areas: "header_graphic" "title" "projects" "home";
@@ -340,8 +345,15 @@ a {
     color: #d1e8e2;
   }
   #home {
+    padding: 20px;
     width: 100%;
     height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   #home:hover {
     background-color: #116466;
