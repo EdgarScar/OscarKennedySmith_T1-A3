@@ -19,7 +19,7 @@
     "title"
     "holder"
     "home";
-    background-color: #2C3531;
+    background-color: #1A1A1D;
 }
 
 #header_graphic {
@@ -32,14 +32,14 @@
             height: 0;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
-            border-top: 100px solid #D9B08C;
+            border-top: 100px solid #950740;
     }
 
         .parallelogram-left {
             width: 50px;
             height: 100px;
             transform: skew(27deg);
-            background: #116466;
+            background: #4E4E50;
         }
 
         #parallelogram-left-first {
@@ -50,7 +50,7 @@
             width: 50px;
             height: 100px;
             transform: skew(-27deg);
-            background: #116466;
+            background: #4E4E50;
         }
 
         #parallelogram-right-first {
@@ -62,7 +62,7 @@
 a {
     text-decoration: none;
     span {
-        color: #d1e8e2;
+        color: #C3073F;
     }
 }
 
@@ -72,7 +72,7 @@ a {
     justify-self: center;
     font-family: 'Tomorrow', sans-serif;
     font-size: 2em;
-    color: #d1e8e2; 
+    color: #C3073F; 
 }
 
 #holder {
@@ -116,9 +116,9 @@ a {
 
     .button {
         border-radius: 4px;
-        background-color: #113f2e;
+        background-color: #4E4E50;
         border: none;
-        color: #d1e8e2;
+        color: #C3073F;
         text-align: center;
         font-size: 1.3em;
         padding: 10px;
@@ -141,11 +141,11 @@ a {
         top: 0;
         right: -20px;
         transition: 0.5s;
-        color: #D9B08C;
+        color: #950740;
         }
 
         .button:hover {
-            background-color: #d1e8e2;
+            background-color: #C3073F;
             span {
                 color: blue;
             }
@@ -175,10 +175,10 @@ a {
     height: 87%;
     width: 50%;
     margin-left: 8%;
-    background-color:#D9B08C;
+    background-color:#950740;
     font-size: .7em;
     font-family: 'Courier Prime', monospace;
-    color: #116466;
+    color: #4E4E50;
     span {
         padding-left: 7px;
     }
@@ -217,13 +217,13 @@ a {
     
         .triangle-left {
             border-top: 15px solid transparent;
-            border-right: 25px solid #D9B08C;
+            border-right: 25px solid #950740;
             border-bottom: 15px solid transparent;
             margin: 0;
         }
     
         span {
-            color: #d1e8e2;
+            color: #C3073F;
             font-family: 'Courier Prime', monospace;
             font-size: 1em;
             margin-left: 10px;
@@ -235,7 +235,7 @@ a {
 
     #holder .button {
         border-radius: 8px;
-        color: #d1e8e2;
+        color: #C3073F;
         font-size: 2em;
         width: 50%;
     }
@@ -257,11 +257,11 @@ a {
         #home {    
             width: 100%; 
             &:hover {
-                background-color: #116466;
+                background-color: #4E4E50;
             } 
             .triangle-left {
                 border-top: 20px solid transparent;
-                border-right: 30px solid #D9B08C;
+                border-right: 30px solid #950740;
                 border-bottom: 20px solid transparent;
             }
             span {

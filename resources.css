@@ -18,7 +18,7 @@
   -ms-grid-rows: 15% 10% 68% 15%;
       grid-template-rows: 15% 10% 68% 15%;
       grid-template-areas: "header_graphic" "title" "holder" "home";
-  background-color: #2C3531;
+  background-color: #1A1A1D;
 }
 
 #header_graphic {
@@ -38,7 +38,7 @@
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 100px solid #D9B08C;
+  border-top: 100px solid #950740;
 }
 
 #header_graphic .parallelogram-left {
@@ -46,7 +46,7 @@
   height: 100px;
   -webkit-transform: skew(27deg);
           transform: skew(27deg);
-  background: #116466;
+  background: #4E4E50;
 }
 
 #header_graphic #parallelogram-left-first {
@@ -58,7 +58,7 @@
   height: 100px;
   -webkit-transform: skew(-27deg);
           transform: skew(-27deg);
-  background: #116466;
+  background: #4E4E50;
 }
 
 #header_graphic #parallelogram-right-first {
@@ -70,7 +70,7 @@ a {
 }
 
 a span {
-  color: #d1e8e2;
+  color: #C3073F;
 }
 
 #title {
@@ -84,7 +84,7 @@ a span {
       justify-self: center;
   font-family: 'Tomorrow', sans-serif;
   font-size: 2em;
-  color: #d1e8e2;
+  color: #C3073F;
 }
 
 #holder {
@@ -140,9 +140,9 @@ a span {
 
 #holder .button {
   border-radius: 4px;
-  background-color: #113f2e;
+  background-color: #4E4E50;
   border: none;
-  color: #d1e8e2;
+  color: #C3073F;
   text-align: center;
   font-size: 1.3em;
   padding: 10px;
@@ -168,11 +168,11 @@ a span {
   right: -20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #D9B08C;
+  color: #950740;
 }
 
 #holder .button:hover {
-  background-color: #d1e8e2;
+  background-color: #C3073F;
 }
 
 #holder .button:hover span {
@@ -210,10 +210,10 @@ a span {
   height: 87%;
   width: 50%;
   margin-left: 8%;
-  background-color: #D9B08C;
+  background-color: #950740;
   font-size: .7em;
   font-family: 'Courier Prime', monospace;
-  color: #116466;
+  color: #4E4E50;
 }
 
 .hiddendiv span {
@@ -269,13 +269,13 @@ i {
 
 #home .triangle-left {
   border-top: 15px solid transparent;
-  border-right: 25px solid #D9B08C;
+  border-right: 25px solid #950740;
   border-bottom: 15px solid transparent;
   margin: 0;
 }
 
 #home span {
-  color: #d1e8e2;
+  color: #C3073F;
   font-family: 'Courier Prime', monospace;
   font-size: 1em;
   margin-left: 10px;
@@ -285,7 +285,7 @@ i {
 @media screen and (min-width: 700px) {
   #holder .button {
     border-radius: 8px;
-    color: #d1e8e2;
+    color: #C3073F;
     font-size: 2em;
     width: 50%;
   }
@@ -305,11 +305,11 @@ i {
     width: 100%;
   }
   #home:hover {
-    background-color: #116466;
+    background-color: #4E4E50;
   }
   #home .triangle-left {
     border-top: 20px solid transparent;
-    border-right: 30px solid #D9B08C;
+    border-right: 30px solid #950740;
     border-bottom: 20px solid transparent;
   }
   #home span {
