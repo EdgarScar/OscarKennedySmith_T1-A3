@@ -177,6 +177,7 @@ a span {
 
 #holder .button:hover span {
   color: blue;
+  text-decoration: underline;
 }
 
 #holder .button:hover span {
@@ -283,6 +284,38 @@ i {
 }
 
 @media screen and (min-width: 700px) {
+  #holder {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: holder;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "facebook linkedin" "github twitter";
+  }
+  #holder #fb {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: facebook;
+  }
+  #holder #li {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: linkedin;
+  }
+  #holder #gh {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: github;
+  }
+  #holder #tw {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: twitter;
+  }
   #holder .button {
     border-radius: 8px;
     color: #d1e8e2;
