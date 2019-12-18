@@ -232,6 +232,21 @@ li a:hover {
 }
 
 @media screen and (min-width: 700px) {
+  #holder {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: holder;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
   #container {
     -ms-grid-rows: 3% 3% 82% 8%;
         grid-template-rows: 3% 3% 82% 8%;
@@ -242,21 +257,36 @@ li a:hover {
   }
   #bloglist {
     padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #bloglist p {
-    font-size: 3em;
+    font-size: 2em;
     color: #D9B08C;
     font-family: 'Tomorrow', sans-serif;
-    padding-bottom: 10px;
     margin: 0%;
   }
   li {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 0.9em;
     border-bottom: 1px solid #D9B08C;
+    width: 80%;
+  }
+  li a:hover {
+    font: 1em helvetica, arial, sans-serif;
+    line-height: 40px;
+    width: 80%;
+    text-decoration: none;
+    color: #2C3531;
+    background: #D9B08C;
   }
   .blogpost .text {
-    padding: 30px 30px 60px 30px;
+    padding: 30px 30px 60px 120px;
     color: #d1e8e2;
     font-family: 'Courier Prime', monospace;
     font-size: 20px;
