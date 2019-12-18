@@ -177,6 +177,7 @@ a span {
 
 #holder .button:hover span {
   color: blue;
+  text-decoration: underline;
 }
 
 #holder .button:hover span {
@@ -294,7 +295,7 @@ i {
     padding-bottom: 2%;
   }
   .hiddendiv {
-    height: 70%;
+    height: 90%;
     width: 50%;
     font-size: 1em;
   }

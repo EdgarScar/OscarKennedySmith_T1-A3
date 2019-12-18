@@ -148,6 +148,7 @@ a {
             background-color: #d1e8e2;
             span {
                 color: blue;
+                text-decoration: underline;
             }
         }
         .button:hover span {
@@ -198,9 +199,6 @@ a {
     align-items: center;
     }
 
-
-
-
     #home {
         grid-area: home;
         display: flex;
@@ -246,7 +244,7 @@ a {
     }
 
     .hiddendiv{
-        height: 70%;
+        height: 90%;
         width: 50%;
         font-size: 1em;
         span {
