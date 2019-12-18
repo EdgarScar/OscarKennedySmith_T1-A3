@@ -81,7 +81,7 @@ a {
       justify-self: center;
   font-family: 'Tomorrow', sans-serif;
   font-size: 2em;
-  color: #d1e8e2;
+  color: #C3073F;
 }
 
 #projects {
@@ -160,7 +160,7 @@ a {
           justify-content: center;
   font-family: 'Bicubik Regular';
   padding: 53px 0px 53px 0px;
-  color: #d1e8e2;
+  color: #C3073F;
   margin: 5%;
   border: 15px solid #950740;
   border-radius: 30px/10px;
@@ -226,7 +226,7 @@ a {
 }
 
 .popup .close:hover {
-  color: #D9B08C;
+  color: #950740;
 }
 
 #home {
@@ -264,7 +264,7 @@ a {
 }
 
 #home span {
-  color: #d1e8e2;
+  color: #C3073F;
   font-family: 'Courier Prime', monospace;
   font-size: 1em;
   margin-left: 10px;

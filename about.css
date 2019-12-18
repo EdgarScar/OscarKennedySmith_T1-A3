@@ -18,7 +18,7 @@
   -ms-grid-rows: 6% 3% 87% 2%;
       grid-template-rows: 6% 3% 87% 2%;
       grid-template-areas: "header_graphic" "title" "content" "home";
-  background-color: #2C3531;
+  background-color: #1A1A1D;
 }
 
 #header_graphic {
@@ -38,7 +38,7 @@
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 100px solid #D9B08C;
+  border-top: 100px solid #950740;
 }
 
 #header_graphic .parallelogram-left {
@@ -46,7 +46,7 @@
   height: 100px;
   -webkit-transform: skew(27deg);
           transform: skew(27deg);
-  background: #116466;
+  background: #4E4E50;
 }
 
 #header_graphic #parallelogram-left-first {
@@ -58,7 +58,7 @@
   height: 100px;
   -webkit-transform: skew(-27deg);
           transform: skew(-27deg);
-  background: #116466;
+  background: #4E4E50;
 }
 
 #header_graphic #parallelogram-right-first {
@@ -85,7 +85,7 @@ a {
           justify-content: center;
   font-family: 'Tomorrow', sans-serif;
   font-size: 2em;
-  color: #d1e8e2;
+  color: #C3073F;
 }
 
 #content {
@@ -103,7 +103,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Courier Prime', monospace;
-  color: #d1e8e2;
+  color: #C3073F;
   font-size: 1em;
   padding: 0px 20px 20px 20px;
 }
@@ -115,7 +115,7 @@ a {
 }
 
 #content a {
-  color: #D9B08C;
+  color: #950740;
   -ms-grid-column-align: center;
       justify-self: center;
   text-decoration: underline;
@@ -172,13 +172,13 @@ a {
 
 #home .triangle-left {
   border-top: 15px solid transparent;
-  border-right: 25px solid #eecd9c;
+  border-right: 25px solid #950740;
   border-bottom: 15px solid transparent;
   margin: 0;
 }
 
 #home span {
-  color: #d1e8e2;
+  color: #C3073F;
   font-family: 'Courier Prime', monospace;
   font-size: 1em;
   margin-left: 10px;
@@ -201,7 +201,7 @@ a {
     display: -ms-grid;
     display: grid;
     font-family: 'Courier Prime', monospace;
-    color: #d1e8e2;
+    color: #C3073F;
     font-size: 2em;
     -ms-grid-columns: 30% 70%;
         grid-template-columns: 30% 70%;
@@ -297,11 +297,11 @@ a {
     height: 60%;
   }
   #home:hover {
-    background-color: #116466;
+    background-color: #4E4E50;
   }
   #home .triangle-left {
     border-top: 20px solid transparent;
-    border-right: 30px solid #eecd9c;
+    border-right: 30px solid #950740;
     border-bottom: 20px solid transparent;
   }
   #home span {
