@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Bicubik Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Bicubik Regular'), url('./Bicubik.woff') format('woff');
-}
 
 #container {
     display: grid; 
@@ -67,7 +61,7 @@ a {
     grid-area: title;
     align-self: center;
     justify-self: center;
-    font-family: 'Tomorrow', sans-serif;
+    font-family: 'Girassol', cursive;
     font-size: 2em;
     color: #d1e8e2; 
 }
@@ -120,7 +114,7 @@ a {
     display: flex;
     font-size: 1em;
     justify-content: center;
-    font-family: 'Bicubik Regular';
+    font-family: 'Girassol', cursive;
     padding: 53px 0px 53px 0px;
     color: #d1e8e2;
     margin: 5%;
@@ -168,7 +162,7 @@ a {
     text-align: center;
     margin-bottom: 5%;
     color: #d1e8e2;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Ma Shan Zheng', cursive;
   }
   .popup .close {
     position: absolute;
@@ -208,7 +202,7 @@ a {
 
     span {
         color: #d1e8e2;
-        font-family: 'Courier Prime', monospace;
+        font-family: 'Ma Shan Zheng', cursive;
         font-size: 1em;
         margin-left: 10px;
         margin-right: 4%;
