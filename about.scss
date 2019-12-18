@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Bicubik Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Bicubik Regular'), url('./Bicubik.woff') format('woff');
-}
 
 #container {
     display: grid; 
@@ -69,7 +63,7 @@ a {
     height: 100%;
     width: 100%;
     justify-content: center;
-    font-family: 'Tomorrow', sans-serif;
+    font-family: 'Girassol', cursive;
     font-size: 2em;
     color: #d1e8e2; 
 }
@@ -79,7 +73,7 @@ a {
     display: flex;
     flex-flow: column;
     align-items: center;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Ma Shan Zheng', cursive;
     color: #d1e8e2;
     font-size: 1em;
     padding: 0px 20px 20px 20px;
@@ -139,7 +133,7 @@ a {
 
     span {
         color: #d1e8e2;
-        font-family: 'Courier Prime', monospace;
+        font-family: 'Ma Shan Zheng', cursive;
         font-size: 1em;
         margin-left: 10px;
         margin-right: 4%;
@@ -161,7 +155,7 @@ a {
     #content {
         grid-area: content;
         display: grid;
-        font-family: 'Courier Prime', monospace;
+        font-family: 'Ma Shan Zheng', cursive;
         color: #d1e8e2;
         font-size: 2em;
         grid-template-columns: 30% 70%;
