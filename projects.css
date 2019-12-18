@@ -10,6 +10,10 @@
   src: local("Bicubik Regular"), url("./Bicubik.woff") format("woff");
 }
 
+html {
+  background-color: #2C3531;
+}
+
 #container {
   display: -ms-grid;
   display: grid;
@@ -85,64 +89,17 @@ a {
 }
 
 #projects {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
   width: 100%;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "one   two" "three four";
-}
-
-#one {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: one;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 100%;
-}
-
-#two {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: two;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 100%;
-}
-
-#three {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: three;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 100%;
-}
-
-#four {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: four;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 100%;
+  height: 100vh;
+  background-color: #2C3531;
 }
 
 .popup .image {
@@ -230,17 +187,19 @@ a {
 }
 
 #home {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: home;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-self: center;
-  -ms-flex-item-align: start;
-      align-self: start;
-  height: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: start;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 100%;
   width: 50%;
+  background-color: #2C3531;
 }
 
 #home a {
@@ -265,8 +224,18 @@ a {
 
 #home span {
   color: #d1e8e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Courier Prime', monospace;
   font-size: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
   margin-left: 10px;
   margin-right: 4%;
 }
@@ -278,41 +247,28 @@ a {
   #container {
     display: -ms-grid;
     display: grid;
+    height: 100vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 15% 10% 68% 15%;
-        grid-template-rows: 15% 10% 68% 15%;
+    -ms-grid-rows: 15% 15% 55% 15%;
+        grid-template-rows: 15% 15% 55% 15%;
         grid-template-areas: "header_graphic" "title" "projects" "home";
     background-color: #2C3531;
   }
   #projects {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
     width: 100%;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "one   two" "three four";
-  }
-  #one {
-    margin-left: 10%;
-    margin-right: 5%;
-  }
-  #two {
-    margin-right: 10%;
-    margin-left: 5%;
-  }
-  #three {
-    margin-left: 10%;
-    margin-right: 5%;
-  }
-  #four {
-    margin-right: 10%;
-    margin-left: 5%;
+    height: 100vh;
+    background-color: #2C3531;
   }
   .popup {
     width: 70%;

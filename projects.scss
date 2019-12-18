@@ -10,6 +10,9 @@
     src: local('Bicubik Regular'), url('./Bicubik.woff') format('woff');
 }
 
+html {
+  background-color: #2C3531;
+}
 #container {
     display: grid; 
     height: 100vh;
@@ -73,43 +76,14 @@ a {
 }
 
 #projects {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-self: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "one   two"
-    "three four";
+    height: 100vh;
+    background-color: #2C3531;
 }
 
-#one {
-    grid-area: one;
-    align-self: center;
-    justify-self: center;
-    width: 100%
-  }
-
-#two {
-    grid-area: two;
-    justify-self: center;
-    align-self: center;
-    width: 100%
-}
-
-#three {
-    grid-area: three;
-    justify-self: center;
-    align-self: center;
-    width: 100%
-}
-
-#four {
-    grid-area: four;
-    justify-self: center;
-    align-self: center;
-    width: 100%
-}
 
 .popup .image {
   height: 90%;
@@ -185,12 +159,13 @@ a {
   }
 
 #home {
-    grid-area: home;
     display: flex;
-    justify-self: center;
-    align-self: start;
-    height: 80%;
+    flex-direction: column;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
     width: 50%;
+    background-color: #2C3531;
 
     a {
         width: 100%;
@@ -208,8 +183,12 @@ a {
 
     span {
         color: #d1e8e2;
+        display: flex;
         font-family: 'Courier Prime', monospace;
         font-size: 1em;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
         margin-left: 10px;
         margin-right: 4%;
     }
@@ -220,51 +199,29 @@ a {
   #title {
     font-size: 4em;
 }
-
   #container {
     display: grid; 
+    height: 100vh;
+    flex-wrap: wrap;
     grid-template-columns: 100%; 
-    grid-template-rows: 15% 10% 68% 15%; 
+    grid-template-rows: 15% 15% 55% 15%; 
     grid-template-areas: 
     "header_graphic"
     "title"
     "projects"
     "home";
     background-color: #2C3531;
-}
+  }
 
-#projects {
-  display: grid;
-  justify-self: end;
-  height: 90%;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "one   two"
-  "three four";
-}
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #2C3531;
+    }
 
-#one {
-  margin-left: 10%;
-  margin-right: 5%;
-}
-
-#two {
-  margin-right: 10%;
-  margin-left: 5%;
-}
-
-#three {
-  margin-left: 10%;
-  margin-right: 5%;
-
-}
-
-#four {
-  margin-right: 10%;
-  margin-left: 5%;
-}
   .popup{
     width: 70%;
     display: flex;
