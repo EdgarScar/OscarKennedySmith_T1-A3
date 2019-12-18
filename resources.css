@@ -82,7 +82,7 @@ a span {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: 'Girassol', cursive;
   font-size: 2em;
   color: #d1e8e2;
 }
@@ -135,7 +135,7 @@ a span {
 
 #holder .grouped span {
   padding-right: 10%;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: 'Girassol', cursive;
 }
 
 #holder .button {
@@ -212,7 +212,7 @@ a span {
   margin-left: 8%;
   background-color: #D9B08C;
   font-size: .7em;
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Ma Shan Zheng', cursive;
   color: #116466;
 }
 
@@ -276,7 +276,7 @@ i {
 
 #home span {
   color: #d1e8e2;
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Ma Shan Zheng', cursive;
   font-size: 1em;
   margin-left: 10px;
   margin-right: 4%;
