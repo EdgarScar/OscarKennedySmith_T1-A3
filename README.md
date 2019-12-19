@@ -1,8 +1,8 @@
 # Portfolio - Oscar Kennedy Smith
 
-## URL Link to website – 
+## URL Link to website – https://edgarscar.github.io/OscarKennedySmith_T1-A3/ 
 
-## Like to GitHub Repo – 
+## Like to GitHub Repo – https://github.com/EdgarScar/OscarKennedySmith_T1-A3 
 
 ## Platforms
 - Galaxy 5 
