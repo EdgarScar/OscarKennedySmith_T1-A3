@@ -321,6 +321,7 @@ a {
   }
   .popup {
     width: 70%;
+    height: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -365,6 +366,10 @@ a {
   }
   #home span {
     font-size: 1.5em;
+  }
+  .popup .image {
+    height: 80%;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=projects.css.map */

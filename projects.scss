@@ -273,6 +273,7 @@ a {
   }
   .popup{
     width: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,4 +313,10 @@ a {
         font-size: 1.5em;
     }
 }
+
+  .popup .image {
+    height: 80%;
+    width: 70%;
+  }
 }
+

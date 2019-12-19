@@ -1,7 +1,12 @@
-# Documentation 
+# Portfolio - Oscar Kennedy Smith
 
 ## URL Link to website – 
+
 ## Like to GitHub Repo – 
+
+## Platforms
+- Galaxy 5 
+- Browser 1280 x 698
 
 ## Purpose 
 
@@ -24,7 +29,7 @@ The features of the website are as follows:
 	- The About Me page will feature a vertical scrolling component that will present a series of photos, accompanied by explanatory text. The component is designed to be enticing to scroll through, revealing additional information as the user scrolls lower. Above this component will be contact details. Additionally, a clearly labeled link will be displayed that when clicked, will open a PDF of my resume. 
 
 - Resources Component – Location: Resources Page – Style: Text, Graphic, Icon
-	- The Resources Layout component will consist of four bottons, each labeled with a certain resource media. When the link is hovered over, a hidden box will appear displaying the contact/username details of the highlighted media and the accompanying logo of the specific media. The text of the bottom will also change to blue and become underlined when hovered over. This is to alert the user to the hyperlink function of each button. When clicked, each button will take the user to the selected media website. 
+	- The Resources Layout component will consist of four buttons, each labeled with a certain resource media. When the link is hovered over, a hidden box will appear displaying the contact/username details of the highlighted media and the accompanying logo of the specific media. The text of the bottom will also change to blue and become underlined when hovered over. This is to alert the user to the hyperlink function of each button. When clicked, each button will take the user to the selected media website. 
 
 - Blog Component – Location: Blog Page – Style: Text, Image
 	- The blog component will feature a list at the top of the page with the title and date of the most recent blog entries to have been added. When hovered over, the font will become larger and will change to indicate to the user that the title can be clicked. If clicked, it will take the user down the same page to the relevant blog post. The user can also choose to scroll down the page at will, browsing the most recent blog posts and the accompanying photo for each. 
@@ -34,9 +39,17 @@ The features of the website are as follows:
 
 ## Sitemap
 
+The main page of the portfolio will consist of a large, vertical menu with four buttons. Each button will be clearly labeled and will take the user to the respective page. Once in each additional page, there will be a button at the bottom of the page that returns the user to the main page. The button will be very similar to the main navigation buttons on the home page so the user will instinctively  know how to navigate back to the home page.   
 
+![ScreenCap](./docs/sitemap.png)
 
 ## Screenshots
+
+![ScreenCap](./docs/pf_mp.png) 
+![ScreenCap](./docs/pf_p.png)
+![ScreenCap](./docs/pf_am.png)
+![ScreenCap](./docs/pf_r.png)
+![ScreenCap](./docs/pf_b.png)
 
 
 
