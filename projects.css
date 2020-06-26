@@ -372,4 +372,7 @@ a {
     width: 70%;
   }
 }
-/*# sourceMappingURL=projects.css.map */
+
+.links {
+  display: flex;
+}
